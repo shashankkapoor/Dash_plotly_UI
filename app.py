@@ -21,11 +21,16 @@ app.layout = html.Div([
     
     html.Div([
         html.Div([
-            html.Button("Heading +Drop down", className='dropdown-button'),
-            html.Button("Heading +Drop down", className='dropdown-button'),
-            html.Button("Heading +Drop down", className='dropdown-button'),
-            html.Button("Heading +Drop down", className='dropdown-button'),
-            html.Button("Heading +Drop down", className='dropdown-button')
+            dcc.Dropdown(['New York City', 'Montréal', 'San Francisco'], 'Montréal'),
+            html.Button("Submit", className='dropdown-button'),
+            dcc.Dropdown(['New York City', 'Montréal', 'San Francisco'], 'Montréal'),
+            html.Button("Submit", className='dropdown-button'),
+            dcc.Dropdown(['New York City', 'Montréal', 'San Francisco'], 'Montréal'),
+            html.Button("Submit", className='dropdown-button'),
+            dcc.Dropdown(['New York City', 'Montréal', 'San Francisco'], 'Montréal'),
+            html.Button("Submit", className='dropdown-button'),
+            dcc.Dropdown(['New York City', 'Montréal', 'San Francisco'], 'Montréal'),
+            html.Button("Submit", className='dropdown-button')
         ], className='sidebar'),
         
         html.Div([
