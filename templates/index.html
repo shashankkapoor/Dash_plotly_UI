@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Graphs</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { display: flex; flex-direction: column; align-items: center; }
+        .charts { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .chart-container { width: 45%; min-width: 400px; border: 1px solid #ddd; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Interactive Graphs</h1>
+    <div class="container">
+        <div class="charts">
+            <div class="chart-container">{{ bar_chart|safe }}</div>
+            <div class="chart-container">{{ line_chart|safe }}</div>
+            <div class="chart-container">{{ scatter_chart|safe }}</div>
+        </div>
+    </div>
+</body>
+</html>
